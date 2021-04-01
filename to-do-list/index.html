@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To-Do-List</title>
+</head>
+
+<body>
+    <div class="header">
+        <h3>Yapılacaklar Listesi</h3>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+
+            <div class="side">
+                <b>YAPIYORUM</b>
+                <hr style="height: 1px; width:100%;background-color: white;border:none">
+
+                <form action="" id="doingForm">
+
+                </form>
+
+            </div>
+
+
+        </div>
+
+        <div class="column">
+            <div class="middle">
+                <div class="add">
+                    <b>EKLE</b>
+                    <hr style="height: 2px; width:100%;background-color: white;border:none">
+                    <form action="" class="formAdd">
+                        <input class="taskInput" id="taskInput" type="text" placeholder="Enter Your Task" onkeypress="return event.keyCode != 13;">
+                        <button class="iconPlus" type="button" onclick="addingList();"><i
+                                class="fa fa-plus"></i></button>
+                    </form>
+
+
+                </div>
+
+                <div class="list">
+                    <B>YAPACAĞIM</B>
+                    <hr style="height: 2px; width:100%;background-color: white;border:none">
+                    <form action="" id="listForm">
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="side">
+                <b>YAPTIM</b>
+                <hr style="height: 1px; width:100%;background-color: white;border:none">
+    
+                <form action="" id="doneForm">
+    
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <script src="main.js">
+        
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
